@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <button class="btn" data-id="control">Make Resume</button>
+    <button class="main btn" data-id="event">Get Resume</button>
+  </header>
+  <div class="article">
+    <section class="articles active-dis" id="control">
+      <div class="btns">
+        <button class="btn" data-id="personal">Personal Info</button>
+        <button class="btn" data-id="qualification">Qualification</button>
+        <button class="btn" data-id="skills">Skills</button>
+        <button class="btn" data-id="projects">Projects</button>
+      </div>
+      <div class="parent">
+        <div class="content active" id="personal">
+
+          <h5>Full Name:</h5>
+          <input type="text" id="name" class="inputs" placeholder="Firstname Middlename Lastname">
+          <h5>Email:</h5>
+          <input type="email" id="email" class="inputs" placeholder="Firstname Middlename Lastname">
+          <h5>D.O.B:</h5>
+          <input type="date" id="birth" class="inputs" placeholder="dd/mm/yy">
+          <h5>Nationality:</h5>
+          <input type="text" id="nationality" class="inputs" placeholder="Firstname Middlename Lastname">
+          <h5>Hobbies:</h5>
+          <input type="text" id="hobbies" class="inputs" placeholder="Firstname Middlename Lastname">
+          <button class="btn" data-set="next1">Next</button>
+        </div>
+
+        <div class="content" id="qualification">
+          <h5>Qualification:</h5>
+          <input type="text" id="qualifications" class="inputs" placeholder="Enter your Qualification">
+          <h5>Aggregate:</h5>
+          <input type="text" id="aggregate" class="inputs" placeholder="Enter your Aggregate">
+          <button class="btn" data-set="next2">Next</button>
+        </div>
+
+        <div class="content" id="skills">
+          <h5>Skills:</h5>
+          <input type="checkbox" class="check" value="python">Python
+        
+          <input type="checkbox" class="check" value="C">C
+       
+          <input type="checkbox" class="check" value="java">Java
+        
+          <input type="checkbox" class="check" value="javascript">Javascript
+       
+          <input type="checkbox" class="check" value="html">Html
+        
+          <input type="checkbox" class="check" value="css">CSS
+        
+          
+          <button class="btn" data-set="next3">Next</button>
+        </div>
+
+        <div class="content" id="projects">
+          <h5>Projects:</h5>
+          <input type="text" id="project" class="inputs" placeholder="Enter your project">
+          <h5>Certificate:</h5>
+          <input type="text" id="certificate" class="inputs" placeholder="Enter your certificate">
+          <button class="btn" id="store" data-set="next2">Done</button>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="articles" id="event">
+      <!-- <h1 id="h1">ritisha: </h1> -->
+    </section>
+  </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
